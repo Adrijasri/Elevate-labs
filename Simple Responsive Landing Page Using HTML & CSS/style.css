@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+     background-image: url(images/backgroung.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu a{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    font-weight: bold;
+    text-align: right;
+
+
+}
+.menu a:hover{
+    color: #ff6347;
+
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+
+}
+.nav-links a{
+    margin-left: 20px
+}
+
+.logo{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-top: 20px;
+    margin-left: 20px;
+    object-fit: cover;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px;
+}
+.name{
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.About{
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+button{
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+button:hover{
+    background-color: #ff4500;
+}
+@media (max-width: 768px){
+    .menu{
+        display: none;
+    }
+    .main{
+        padding: 0 10px;
+    }
+    .name{
+        font-size: 30px;
+    }
+    .About{
+        font-size: 16px;
+    }
+    button{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+} 
+h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.social-links a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.social-links a:hover{
+    color: #ff6347;
+    
+}
+footer p{
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
